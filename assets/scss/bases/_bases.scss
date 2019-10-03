@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSansPro/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font: {
+        family: 'Open Sans';
+        weight: 300;
+        size: 1.4rem;
+    }
+    color: $color-03;
+}
+.container {
+    @include for-size(1200) {
+        max-width: 1170px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,table,tr,td,figure,figcaption, label {
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1;
+    font-size: inherit;
+    font-weight: inherit;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    @include transition(all .3s ease);
+    &:hover {
+        text-decoration: none;
+    }
+}
+button {
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
+ul {
+    list-style: none;
+}
